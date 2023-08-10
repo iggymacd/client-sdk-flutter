@@ -181,7 +181,7 @@ class _ConnectPageState extends State<ConnectPage> {
         MaterialPageRoute(builder: (_) => RoomPage(room, listener)),
       );
     } catch (error) {
-      print('Could not connect $error');
+      print('Could not connect : $error');
       await ctx.showErrorDialog(error);
     } finally {
       setState(() {
